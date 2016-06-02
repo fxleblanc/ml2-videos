@@ -1,24 +1,24 @@
 # Conseils git: Commit par erreur sur la branche principale
 
-Bonjour à tous et bienvenue dans ce tout nouvel épisode sur les conseils git. Dans cette vidéo, nous allons explorer ce qui se passe lorsque nous faisons un commit par erreur dans la branche principale.
+Bonjour à tous et bienvenue dans ce tout nouvel épisode sur les conseils git. Dans cette vidéo, nous allons explorer ce qui se passe lorsque nous faisons un commit par erreur dans la branche principale. À toute fin pratique, la branche principale se nommera master.
 
-Il m'est personnellement arrivé plusieurs fois de faire cet erreur et il existe probablement plusieurs solutions pour se sortir de cette situation.
+Imaginons que nous avons les commits a,b et c dans la branche master. Maintenant, imaginez que vous faites par erreur un commit nommé D. Le commit D devrait idéalement être dans une branche séparée mais comment fait-on pour le transférer de master à une nouvelle branche?
 
-Dans ce tutoriel, je vais vous montrer comment transférer vos commits de la branche principale vers une branche de fonctionnalité.
+Dans ce tutoriel, je vais vous montrer exactement cela.
 
-De cette façon, vous aurez une branche principale avec un historique propre et vous ne perdrez pas votre travail car il sera dans la nouvelle branche de travail.
+Allons-y.
 
-Sans plus tarder, allons-y.
+La première étape consiste à créer la branche de fonctionnalité à partir de master. Pour se faire, assurez-vous d'être dans la branche master et utilisez la commande git checkout -b branche.
 
-La première étape consiste à créer la branche de fonctionnalité à partir de la branche principale. Pour se faire, assurez-vous d'être dans la branche principale et utilisez la commande git checkout -b branche. Nous avons maintenant deux branches ayant exactement le même historique.
+Nous avons maintenant deux branches ayant exactement le même historique.
 
-Ensuite, revenons dans la branche principale avec la commande git checkout le nom de votre branche principale. Dans mon cas, il s'agit de master.
+Ensuite, revenons dans la branche principale avec la commande git checkout master. Cette commande est très importante car la prochaine manipulation demande à ce que nous soyons dans la branche master.
 
-La dernière étape va nous permettre d'enlever le ou les commits mis par erreur dans notre branche principale. Faites bien attention avant d'utiliser cette commande car elle va supprimer des commits de notre historique. C'est d'ailleurs pourquoi nous avons préalablement créé une autre branche avant de faire cette manoeuvre.
+La dernière étape va nous permettre d'enlever le ou les commits mis par erreur dans notre branche principale. Faites bien attention avant d'utiliser cette commande car elle va supprimer des commits de notre historique.
 
-Voici donc la commande: git reset --hard HEAD~1. Ici, 1 représente le nombre de commits que vous voulez supprimer à partir du plus récent. Pour confirmer que la commande a bien fonctionnée, tapez la commande git log pour voir si le commit que vous avez mis par erreur n'existe plus.
+Voici donc la commande: git reset --hard HEAD~1. Ici, 1 représente le nombre de commits que vous voulez supprimer à partir du plus commit le plus récent.
 
-Super. Vous avez maintenant réglé votre problème et êtes prêts à recommencer votre travail sans affecter la branche principale. De plus, vous n'avez pas perdu votre travail puisqu'il a été transféré dans une branche de travail.
+Super. Vous avez maintenant réglé votre problème et êtes prêts à recommencer votre travail sans affecter la branche principale.
 
 Dans la prochaine vidéo, nous allons apprendre comment regrouper nos commits en un seul en utilisant la technique du squash.
 
