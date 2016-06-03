@@ -2,7 +2,7 @@
 
 Bonjour à tous et bienvenue dans la dernière vidéo de la série sur comment contribuer à la maison du logiciel libre. Cette série a été pour moi très plaisante à faire et j'espère que vous en avez appris plus sur comment contribuer à des projets libres.
 
-Même si cette série se termine, j'aimerais quand même vous spécifier que je vais continuer à donner des conseils git dans les prochaines vidéos. Ces conseils seront encore sous forme de capsules mais n'auront aucune suite logiques entre elles.
+Même si cette série se termine, j'aimerais quand même vous spécifier que je vais continuer à donner des conseils git dans les prochaines vidéos. Ces conseils seront encore sous forme de capsules mais n'auront aucune suite logique entre elles.
 
 En parralèle, je vais également continuer ma série sur les conseils en ligne de commande. Je vous encourage à la regarder si vous voulez en apprendre plus sur comment vous débrouiller dans un environnement linux.
 
